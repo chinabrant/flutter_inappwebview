@@ -150,7 +150,7 @@ public class InAppWebViewSettings: ISettings<InAppWebView> {
                 realSettings["limitsNavigationsToAppBoundDomains"] = configuration.limitsNavigationsToAppBoundDomains
                 realSettings["javaScriptEnabled"] = configuration.defaultWebpagePreferences.allowsContentJavaScript
             }
-            if #available(iOS 14.5, *) {
+            if #available(iOS 15.0, *) {
                 realSettings["isTextInteractionEnabled"] = configuration.preferences.isTextInteractionEnabled
                 realSettings["upgradeKnownHostsToHTTPS"] = configuration.upgradeKnownHostsToHTTPS
             }
